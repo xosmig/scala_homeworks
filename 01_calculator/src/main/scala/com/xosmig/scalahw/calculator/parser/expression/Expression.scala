@@ -10,5 +10,5 @@ case class Value(value: Double) extends Expression {
 
 sealed trait Operation extends Expression
 abstract class BinaryOperation(lhs: Expression, rhs: Expression) extends Operation
-abstract class UnaryOperation(arg: Expression) extends Operation
-abstract class Function(arg: Expression) extends Operation
+abstract class UnaryOperation(rhs: Expression) extends Operation
+abstract class Function(rhs: Expression) extends Operation
